@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>Blog - Victor-g</title>
+  <link rel="stylesheet" href="fonts/fontawesome-free-6.1.2-web/css/all.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="fonts/poppins/poppins.css" />
+  <link rel="stylesheet" href="css/scroll.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+    integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/carousel.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+  <!-- layout principal. Usamos metodología BEM -->
+  <div class="layout">
+    <nav class="mobile-menu">
+      <a href="#" class="hamburger-wrapper">
+        <div class="hamburger-menu"></div>
+      </a>
+      <div class="mobile-menu-overlay">
+        <ul>
+          <img src="img/default-user.jpg" class="user-info__image_mobile" alt="" />
+          <li class="menu__option">
+            <a class="oscuro">
+              <i class="menu__icon fa-solid fa-moon fa-house"></i>
+              <span class="menu__overlay">Modo oscuro</span>
+            </a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="curriculum.html">Currículum</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- barra lateral (info usuario). -->
+    <aside class="layout__aside">
+      <section class="aside__user-info">
+        <!-- información general usuario -->
+        <div class="user-info__general">
+          <div class="user-info__container-image">
+            <img src="img/default-user.jpg" class="user-info__image" alt="Foto de perfil" />
+            <!-- aquí iría la sombra -->
+          </div>
+          <h2 class="user-info__name">Victor Gonzalez</h2>
+          <h4 class="user-info__job">Junior Full Stack Developer</h4>
+        </div>
+        <!-- menú de navegación -->
+        <nav class="layout__menu">
+          <ul class="menu__list">
+            <li class="menu__option">
+              <a href="index.html" class="menu__link">
+                <i class="menu__icon fa-solid fa-house"></i>
+                <span class="menu__overlay">Home</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="sobre-mi.html" class="menu__link">
+                <i class="menu__icon fa-solid fa-user"></i>
+                <span class="menu__overlay">Sobre mí</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="curriculum.html" class="menu__link">
+                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                <span class="menu__overlay">Curriculum</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="portafolio.html" class="menu__link">
+                <i class="menu__icon fa-solid fa-briefcase"></i>
+                <span class="menu__overlay">Portafolio</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="blog.html" class="menu__link menu__link--active">
+                <i class="menu__icon fa-solid fa-book"></i>
+                <span class="menu__overlay">Blog</span>
+              </a>
+            </li>
+            <li class="menu__option">
+              <a href="contacto.html" class="menu__link">
+                <i class="menu__icon fa-solid fa-envelope"></i>
+                <span class="menu__overlay">Contacto</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--El botonazo -->
+
+        <label class="switch">
+          <input class="switch__input switchOscuro" type="checkbox" role="switch">
+          <span class="switch__base-outer"></span>
+          <span class="switch__base-inner"></span>
+          <svg class="switch__base-neon" viewBox="0 0 40 24" width="40px" height="24px">
+            <defs>
+              <filter id="switch-glow">
+                <feGaussianBlur result="coloredBlur" stddeviation="1"></feGaussianBlur>
+                <feMerge>
+                  <feMergeNode in="coloredBlur"></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+              </filter>
+              <linearGradient id="switch-gradient1" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="hsl(var(--on-hue1),90%,70%)" />
+                <stop offset="100%" stop-color="hsl(var(--on-hue2),90%,70%)" />
+              </linearGradient>
+              <linearGradient id="switch-gradient2" x1="0.7" y1="0" x2="0.3" y2="1">
+                <stop offset="25%" stop-color="hsla(var(--on-hue1),90%,70%,0)" />
+                <stop offset="50%" stop-color="hsla(var(--on-hue1),90%,70%,0.3)" />
+                <stop offset="100%" stop-color="hsla(var(--on-hue2),90%,70%,0.3)" />
+              </linearGradient>
+            </defs>
+            <path fill="none" filter="url(#switch-glow)" stroke="url(#switch-gradient1)" stroke-width="1"
+              stroke-dasharray="0 104.26 0" stroke-dashoffset="0.01" stroke-linecap="round"
+              d="m.5,12C.5,5.649,5.649.5,12,.5h16c6.351,0,11.5,5.149,11.5,11.5s-5.149,11.5-11.5,11.5H12C5.649,23.5.5,18.351.5,12Z" />
+          </svg>
+          <span class="switch__knob-shadow"></span>
+          <span class="switch__knob-container">
+            <span class="switch__knob">
+              <svg class="switch__knob-neon" viewBox="0 0 48 48" width="48px" height="48px">
+                <circle fill="none" stroke="url(#switch-gradient2)" stroke-dasharray="0 90.32 0 54.19"
+                  stroke-linecap="round" stroke-width="1" r="23" cx="24" cy="24" transform="rotate(-112.5,24,24)" />
+              </svg>
+            </span>
+          </span>
+          <span class="switch__led"></span>
+          <span class="switch__text">Power</span>
+        </label>
+
+        <!-- botón del curriculum -->
+        <div class="user-info__buttons">
+          <a href="#" class="user-info__btn animate__animated animate__bounce animate__delay-1s"
+            id="descargar-cv">Descargar CV</a>
+        </div>
+
+        <!-- pié de página -->
+        <footer class="user-info__footer">
+          &copy; 2024 victor-g
+        </footer>
+      </section>
+    </aside>
+
+    <!-- contenido principal -->
+    <main class="layout__content">
+      <section class="content__page content__blog">
+        <header class="blog__header">
+          <h1 class="blog__title">BLOG</h1>
+        </header>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a href="#" class="article__image-link">
+                <div class="article__mask">
+                  <img class="article__image" src="img/articulo-1.jpg" alt="Imagen del blog"
+                    style="height: 175px; width: 300px;" />
+                </div>
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+            </div>
+            <div class="article__bottom">
+              <time datetime="2023-08-30" class="article__date">30/08/2023</time>
+              <a href="#" class="article__link">
+                <h2 class="article__title">
+                  Tetris Javascript
+                </h2>
+              </a>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur nostrum ex quasi in corrupti animi asperiores
+                officia autem deserunt odio.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a href="#" class="article__image-link">
+                <div class="article__mask">
+                  <img class="article__image" src="img/articulo-2.jpg" alt="Imagen del blog"
+                    style="height: 175px; width: 300px;" />
+                </div>
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+            </div>
+            <div class="article__bottom">
+              <time datetime="2023-03-05" class="article__date">05/03/2023</time>
+              <a href="#" class="article__link">
+                <h2 class="article__title">Tic tac toe javascript</h2>
+              </a>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur nostrum ex quasi in corrupti animi asperiores
+                officia autem deserunt odio.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a href="#" class="article__image-link">
+                <div class="article__mask">
+                  <img class="article__image" src="img/articulo-3.jpg" alt="Imagen del blog"
+                    style="height: 175px; width: 300px;" />
+                </div>
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+            </div>
+            <div class="article__bottom">
+              <time datetime="2023-03-05" class="article__date">05/03/2023</time>
+              <a href="#" class="article__link">
+                <h2 class="article__title">Snake en javascript</h2>
+              </a>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur nostrum ex quasi in corrupti animi asperiores
+                officia autem deserunt odio.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a href="#" class="article__image-link">
+                <div class="article__mask">
+                  <img class="article__image" src="img/articulo-1.jpg" alt="Imagen del blog"
+                    style="height: 175px; width: 300px;" />
+                </div>
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+            </div>
+            <div class="article__bottom">
+              <time datetime="2023-08-30" class="article__date">30/08/2023</time>
+              <a href="#" class="article__link">
+                <h2 class="article__title">
+                  Tetris Javascript
+                </h2>
+              </a>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur nostrum ex quasi in corrupti animi asperiores
+                officia autem deserunt odio.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a href="#" class="article__image-link">
+                <div class="article__mask">
+                  <img class="article__image" src="img/articulo-2.jpg" alt="Imagen del blog"
+                    style="height: 175px; width: 300px;" />
+                </div>
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+            </div>
+            <div class="article__bottom">
+              <time datetime="2023-03-05" class="article__date">05/03/2023</time>
+              <a href="#" class="article__link">
+                <h2 class="article__title">Tic tac toe javascript</h2>
+              </a>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur nostrum ex quasi in corrupti animi asperiores
+                officia autem deserunt odio.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a href="#" class="article__image-link">
+                <div class="article__mask">
+                  <img class="article__image" src="img/articulo-3.jpg" alt="Imagen del blog"
+                    style="height: 175px; width: 300px;" />
+                </div>
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+            </div>
+            <div class="article__bottom">
+              <time datetime="2023-03-05" class="article__date">05/03/2023</time>
+              <a href="#" class="article__link">
+                <h2 class="article__title">Snake en javascript</h2>
+              </a>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur nostrum ex quasi in corrupti animi asperiores
+                officia autem deserunt odio.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a href="#" class="article__image-link">
+                <div class="article__mask">
+                  <img class="article__image" src="img/articulo-1.jpg" alt="Imagen del blog"
+                    style="height: 175px; width: 300px;" />
+                </div>
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+            </div>
+            <div class="article__bottom">
+              <time datetime="2023-08-30" class="article__date">30/08/2023</time>
+              <a href="#" class="article__link">
+                <h2 class="article__title">
+                  Tetris Javascript
+                </h2>
+              </a>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur nostrum ex quasi in corrupti animi asperiores
+                officia autem deserunt odio.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a href="#" class="article__image-link">
+                <div class="article__mask">
+                  <img class="article__image" src="img/articulo-2.jpg" alt="Imagen del blog"
+                    style="height: 175px; width: 300px;" />
+                </div>
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+            </div>
+            <div class="article__bottom">
+              <time datetime="2023-03-05" class="article__date">05/03/2023</time>
+              <a href="#" class="article__link">
+                <h2 class="article__title">Tic tac toe javascript</h2>
+              </a>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur nostrum ex quasi in corrupti animi asperiores
+                officia autem deserunt odio.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a href="#" class="article__image-link">
+                <div class="article__mask">
+                  <img class="article__image" src="img/articulo-3.jpg" alt="Imagen del blog"
+                    style="height: 175px; width: 300px;" />
+                </div>
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+            </div>
+            <div class="article__bottom">
+              <time datetime="2023-03-05" class="article__date">05/03/2023</time>
+              <a href="#" class="article__link">
+                <h2 class="article__title">Snake en javascript</h2>
+              </a>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur nostrum ex quasi in corrupti animi asperiores
+                officia autem deserunt odio.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a href="#" class="article__image-link">
+                <div class="article__mask">
+                  <img class="article__image" src="img/articulo-1.jpg" alt="Imagen del blog"
+                    style="height: 175px; width: 300px;" />
+                </div>
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+            </div>
+            <div class="article__bottom">
+              <time datetime="2023-08-30" class="article__date">30/08/2023</time>
+              <a href="#" class="article__link">
+                <h2 class="article__title">
+                  Tetris Javascript
+                </h2>
+              </a>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur nostrum ex quasi in corrupti animi asperiores
+                officia autem deserunt odio.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a href="#" class="article__image-link">
+                <div class="article__mask">
+                  <img class="article__image" src="img/articulo-2.jpg" alt="Imagen del blog"
+                    style="height: 175px; width: 300px;" />
+                </div>
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+            </div>
+            <div class="article__bottom">
+              <time datetime="2023-03-05" class="article__date">05/03/2023</time>
+              <a href="#" class="article__link">
+                <h2 class="article__title">Tic tac toe javascript</h2>
+              </a>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur nostrum ex quasi in corrupti animi asperiores
+                officia autem deserunt odio.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="article__top">
+              <div class="article__category">Desarrollo</div>
+              <a href="#" class="article__image-link">
+                <div class="article__mask">
+                  <img class="article__image" src="img/articulo-3.jpg" alt="Imagen del blog"
+                    style="height: 175px; width: 300px;" />
+                </div>
+                <div class="article__logo">
+                  <i class="article__icon fa-solid fa-book"></i>
+                </div>
+              </a>
+            </div>
+            <div class="article__bottom">
+              <time datetime="2023-03-05" class="article__date">05/03/2023</time>
+              <a href="#" class="article__link">
+                <h2 class="article__title">Snake en javascript</h2>
+              </a>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur nostrum ex quasi in corrupti animi asperiores
+                officia autem deserunt odio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="mondongo">
+        El desarollador esta trabajando en esto.
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
